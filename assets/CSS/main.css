@@ -179,7 +179,7 @@ label {
 
     .top-bar {
         position: relative;
-        height: 45px;
+        height: 50px;
         border-bottom: solid;
         border-bottom-color: var(--skewed-color);
     }
@@ -192,19 +192,12 @@ label {
     }
 
     .sign-up {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
         margin-right: 10px;
         width: 50px;
         height: 20px;
         line-height: 15px;
         font-size: var(--font-size-s-sm);
-        background-color: var(--base-color);
-        border: solid var(--contrast-color);
-        border-radius: 5px;
-        text-align: center;
+        border-width: 1px;
     }
 
     .logo.hidden {
