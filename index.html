@@ -1,9 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>J Blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/CSS/main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Content Nausea</title>
   </head>
   <body>
-    <h1>Hello Lulu!</h1>
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="top-bar" id="top-bar">
+          <div class="search-bar" id="search-bar">
+            <label for="search-input">Search Input</label>
+            <input class="form-input" id="search-input" type="text" placeholder="Show me...">
+            <button class="go-button" id="go-button">
+              <i class="ri-arrow-right-fill go-arrow"></i>
+            </button>
+          </div>
+          <button class="search-icon-button" id="search-button">
+            <i class="ri-search-line search-icon"></i>
+            <i class="ri-close-line close-icon"></i>
+          </button>
+          <div class="logo" id="logo">
+            <a class="logo-link" href="./index.html">
+              <img class="logo-pic" src="assets/imgs/content-nausea.png" alt="Content Nausea Logo">
+            </a>
+          </div>
+          <a href="#">
+            <div class="sign-up" id="sign-up">Sign Up</div>
+          </a>
+        </div>
+        <div class="menu-bar">
+          <ul class="menu-list">
+            <li>
+              <a href="#" class="list-link">New Posts</a>
+            </li>
+            <li>
+              <a href="#" class="list-link">Reviews</a>
+            </li>
+            <li>
+              <a href="#" class="list-link">Film</a>
+            </li>
+            <li>
+              <a href="#" class="list-link">Music</a>
+            </li>
+            <li>
+              <a href="#" class="list-link">Others</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   </body>
+  <script src="./assets/JS/main.js"></script>
 </html>

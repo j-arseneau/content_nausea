@@ -1,0 +1,227 @@
+:root {
+    --base-color: #ffffff;
+    --skewed-color: #d1d1d1;
+    --contrast-color: #000000;
+    --focus-color: #c94eff;
+    --font-size-s-sm: 0.6rem;
+    --font-size-sm: 0.8rem;
+    --font-size-med: 1.0rem;
+    --font-size-lg: 1.4rem;
+    --font-family: 'gill sans', sans-serif;
+    --gap: 1.2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-color: rgb(255, 218, 218);*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+
+}
+
+img {
+    max-width: 100%;
+}
+
+html{
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-med);
+    color: var(--contrast-color);
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+label {
+    display: none;
+}
+
+.top-bar {
+    position: relative;
+    height: 90px;
+    border-bottom: solid;
+    border-bottom-color: var(--skewed-color);
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-pic {
+    width: 400px;
+    height: 80px;
+}
+
+.logo-link {
+    margin-top: 5px;
+}
+
+.search-icon-button {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    font-size: var(--font-size-med);
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+    aspect-ratio: 1;
+}
+
+.search-bar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 90% 1fr;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    width: 20%;
+    height: 40%;
+    transform: translateY(-50%) scale(0);
+    border: solid var(--contrast-color);
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.search-bar:focus-within {
+    box-shadow: 0 0 5px var(--focus-color);
+}
+
+.form-input {
+    margin-left: 20px;
+    font-family: var(--font-family);
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.go-button {
+    font-size: var(--font-size-lg);
+    justify-self: start;
+    border: none;
+    margin-top: 4px;
+    background-color: transparent;
+}
+
+.close-icon{
+    display: none;
+}
+
+.search-icon-button.activated .search-icon{
+    display: none;
+}
+
+.search-icon-button.activated .close-icon{
+    display: block;
+}
+
+.search-bar.activated{
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}
+
+.sign-up {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    width: 80px;
+    height: 30px;
+    line-height: 25px;
+    font-size: var(--font-size-sm);
+    border: solid var(--contrast-color);
+    background-color: var(--base-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+    gap: var(--gap);
+    border-bottom: solid;
+    border-bottom-color: var(--skewed-color);
+}
+
+@media (max-width: 1000px) {
+    .search-bar {
+        grid-template-columns: 85% 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .logo-pic {
+        width: 200px;
+        height: 40px;
+    }
+
+    .top-bar {
+        position: relative;
+        height: 45px;
+        border-bottom: solid;
+        border-bottom-color: var(--skewed-color);
+    }
+
+    body{
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--contrast-color);
+        letter-spacing: 1px;
+    }
+
+    .sign-up {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 10px;
+        width: 50px;
+        height: 20px;
+        line-height: 15px;
+        font-size: var(--font-size-s-sm);
+        background-color: var(--base-color);
+        border: solid var(--contrast-color);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .logo.hidden {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    .sign-up.hidden {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    .search-bar.activated {
+        width: 85%;
+        height: 80%;
+        left: 10%;
+        top: 50%;
+        grid-template-columns: 90% 1fr;
+    }
+}
