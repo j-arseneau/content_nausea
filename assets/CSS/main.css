@@ -1,8 +1,11 @@
+/* Base CSS Stuff */
 :root {
     --base-color: #ffffff;
     --skewed-color: #d1d1d1;
     --contrast-color: #000000;
+    --light-contrast-color: #1a1a1a;
     --focus-color: #c94eff;
+    --fun-color: #ffcdfb;
     --font-size-s-sm: 0.6rem;
     --font-size-sm: 0.8rem;
     --font-size-med: 1.0rem;
@@ -165,6 +168,160 @@ label {
     border-bottom-color: var(--skewed-color);
 }
 
+/* Featured Posts */
+.featured-posts {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+
+.section-header-offset {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.featured-posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.post-container {
+    width: 100%;
+}
+
+.post-content {
+    width: 600px;
+    margin: auto;
+    top: 50%;
+    padding: 1rem 1rem;
+    transition: background-color 0.2s;
+    border-radius: 10px;
+}
+
+.blank-article-pic {
+    width: 100%;
+    height: 400px;
+    background-color: var(--skewed-color);
+    border: solid var(--contrast-color);
+}
+
+.article-text {
+    width: 100%;
+}
+
+.article-data {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.post-tag,
+.post-type {
+    border: solid var(--contrast-color);
+    padding: 2px 2px;
+    border-radius: 3px;
+}
+
+.blank-review-pic {
+    width: 250px;
+    height: 250px;
+    background-color: var(--skewed-color);
+    border: solid var(--contrast-color);
+}
+
+.review-link {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.review-data {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.post-content:hover {
+    background-color: var(--fun-color);
+}
+
+.divider-line {
+    background-color: var(--light-contrast-color);
+    width: 80%;
+    height: 1px;
+    margin: auto;
+}
+
+/* About Me */
+
+.about-me-container {
+    width: 70%;
+    height: 500px;
+    margin: 30px auto;
+    font-size: var(--font-size-lg);
+}
+
+.author-pic-holder {
+    height: 90%;
+    aspect-ratio: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.author-pic {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+
+.footer-container {
+    background-color: var(--light-contrast-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.icon-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--base-color);
+    font-size: 2rem;
+    display: flex;
+    gap: var(--gap);
+}
+
+.letterboxd-icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* Screen Size Changes */
+
+@media (min-width: 1200px) {
+    .post-content {
+        width: 1000px;
+        font-size: var(--font-size-med)
+    }
+
+    .blank-review-pic {
+        width: 400px;
+        height: 400px;
+    }
+
+    .blank-article-pic {
+        height: 533px;
+    }
+}
+
 @media (max-width: 1000px) {
     .search-bar {
         grid-template-columns: 85% 1fr;
@@ -216,5 +373,36 @@ label {
         left: 10%;
         top: 50%;
         grid-template-columns: 90% 1fr;
+    }
+
+    .featured-posts {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .post-content {
+        width: 350px;
+        font-size: var(--font-size-s-sm)
+    }
+
+    .blank-review-pic {
+        width: 130px;
+        height: 130px;
+    }
+
+    .blank-article-pic {
+        height: 233px;
+    }
+
+    .review-data {
+        gap: 0.4rem;
+    }
+
+    .about-me-container {
+        width: 70%;
+        height: 500px;
+        margin: 30px auto;
+        font-size: var(--font-size-med);
     }
 }
