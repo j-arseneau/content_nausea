@@ -35,3 +35,8 @@ window.addEventListener('keyup', event => {
     }
     }
 )
+
+
+fetch('./assets/post-headers.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
