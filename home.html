@@ -9,105 +9,72 @@
     <title>Content Nausea</title>
   </head>
   <body>
-    <header class="header" id="header">
-      <nav class="navbar">
-        <div class="top-bar" id="top-bar">
-          <div class="search-bar" id="search-bar">
-            <label for="search-input">Search Input</label>
-            <input class="form-input" id="search-input" type="text" placeholder="Show me...">
-            <button class="go-button" id="go-button">
-              <i class="ri-arrow-right-fill go-arrow"></i>
+    <div class="content">
+      <header class="header" id="header">
+        <nav class="navbar">
+          <div class="top-bar" id="top-bar">
+            <div class="search-bar" id="search-bar">
+              <label for="search-input">Search Input</label>
+              <input class="form-input" id="search-input" type="text" placeholder="Show me...">
+              <button class="go-button" id="go-button">
+                <i class="ri-arrow-right-fill go-arrow"></i>
+              </button>
+            </div>
+            <button class="search-icon-button" id="search-button">
+              <i class="ri-search-line search-icon"></i>
+              <i class="ri-close-line close-icon"></i>
             </button>
+            <div class="logo" id="logo">
+              <a class="logo-link" href="./home.html">
+                <img class="logo-pic" src="assets/imgs/content-nausea.png" alt="Content Nausea Logo">
+              </a>
+            </div>
           </div>
-          <button class="search-icon-button" id="search-button">
-            <i class="ri-search-line search-icon"></i>
-            <i class="ri-close-line close-icon"></i>
-          </button>
-          <div class="logo" id="logo">
-            <a class="logo-link" href="./home.html">
-              <img class="logo-pic" src="assets/imgs/content-nausea.png" alt="Content Nausea Logo">
-            </a>
+          <div class="menu-bar">
+            <ul class="menu-list">
+              <li>
+                <a href="post-view.html" class="list-link" id="new-posts">New Posts</a>
+              </li>
+              <li>
+                <a href="post-view.html" class="list-link" id="articles">Articles</a>
+              </li>
+              <li>
+                <a href="post-view.html" class="list-link" id="reviews">Reviews</a>
+              </li>
+              <li>
+                <a href="post-view.html" class="list-link" id="film">Film</a>
+              </li>
+              <li>
+                <a href="post-view.html" class="list-link" id="music">Music</a>
+              </li>
+              <li>
+                <a href="post-view.html" class="list-link" id="others">Others</a>
+              </li>
+            </ul>
           </div>
-          <a href="#">
-            <div class="sign-up" id="sign-up">Sign Up</div>
-          </a>
-        </div>
-        <div class="menu-bar">
-          <ul class="menu-list">
-            <li>
-              <a href="#" class="list-link">New Posts</a>
-            </li>
-            <li>
-              <a href="#" class="list-link">Reviews</a>
-            </li>
-            <li>
-              <a href="#" class="list-link">Film</a>
-            </li>
-            <li>
-              <a href="#" class="list-link">Music</a>
-            </li>
-            <li>
-              <a href="#" class="list-link">Others</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
-    <section class="featured-posts section-header-offset">
-      <div class="featured-posts-container">
-        <div class="article-post-container post-container">
-          <div class="post-content">
-            <a href="./post.html">
-              <div class="blank-article-pic"></div>
-              <div class="article-text">
-                <div class="article-data">
-                  <span>Publish Date</span>
-                  <span class="post-type">Type Here</span>
-                  <span class="post-tag">Tag Here</span>
-                </div>
-                <div class="article-captions">
-                  <h3 class="post-title">Title Here</h3>
-                  <span>Subtitle Here</span>
-                </div>
-              </div>
-            </a>
+      <section class="multi-posts featured-posts section-header-offset">
+        <div class="multi-post-container featured-posts-container" id="featured-container">
+        </div>
+      </section>
+      <section class="about-me-section section-header-offset">
+        <div class="divider-line"></div>
+        <div class="about-me-container">
+          <div class="author-pic-holder">
+            <img class="author-pic" src="./assets/imgs/me.jpeg" alt="Picture of me">
+          </div>
+          <div class="about-me-content">
+            <h3>About the Author</h3>
+            <p>
+              Fill in this later with about me section.
+            </p>
           </div>
         </div>
-        <div class="review-post-container post-container">
-          <div class="post-content">
-            <a class="review-link" href="./post.html">
-              <div class="blank-review-pic"></div>
-              <div class="review-text">
-                <div class="review-data">
-                  <span>12-10-2023</span>
-                  <span class="post-type">Type Here</span>
-                  <span class="post-tag">Tag Here</span>
-                </div>
-                <div class="review-captions">
-                  <h3 class="post-title">Title Here</h3>
-                  <span>Subtitle Here</span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about-me-section section-header-offset">
-      <div class="divider-line"></div>
-      <div class="about-me-container">
-        <div class="author-pic-holder">
-          <img class="author-pic" src="./assets/imgs/me.jpeg" alt="Picture of me">
-        </div>
-        <div class="about-me-content">
-          <h3>About the Author</h3>
-          <p>
-            Fill in this later with about me section.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+      <div class="section-footer-offset"></div>
+    </div>
     <footer class="footer" id="#footer">
       <div class="footer-container">
         <div class="icons-container">
