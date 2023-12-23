@@ -4,6 +4,7 @@
     --skewed-color: #d1d1d1;
     --contrast-color: #000000;
     --light-contrast-color: #1a1a1a;
+    --trans-base: rgba(255, 255, 255, 0.9);
     --focus-color: #c94eff;
     --fun-color: #ffcdfb;
     --font-size-s-sm: 0.6rem;
@@ -22,10 +23,6 @@
     /*border-style: solid;*/
     /*border-width: 1px;*/
 
-}
-
-img {
-    max-width: 100%;
 }
 
 html{
@@ -78,6 +75,7 @@ label {
 }
 
 .logo-pic {
+    vertical-align: middle;
     width: 400px;
     height: 80px;
 }
@@ -157,6 +155,87 @@ label {
     border-bottom: solid;
     border-bottom-color: var(--skewed-color);
 }
+
+/* Featured */
+
+.featured-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-featured-container {
+    position: relative;
+    padding: 1rem 1rem;
+}
+
+.first-featured-img {
+    float: right;
+    width: 100%;
+    height: auto;
+    max-width: 120vh;
+    max-height: 80vh;
+    vertical-align: middle;
+    aspect-ratio: auto;
+}
+
+.first-featured-captions {
+    padding: 1rem 1rem;
+    font-size: var(--font-size-lg);
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap);
+    text-align: center;
+    background-color: var(--trans-base);
+}
+
+.small-posts {
+    width: 80%;
+}
+
+.new-posts-container {
+    width: 100%;
+    display: flex;
+    gap: var(--gap);
+}
+
+.small-featured-container {
+    width: 25%;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+}
+
+.small-featured-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.small-featured-article-img {
+    width: 100%;
+    height: auto;
+}
+
+.small-featured-review-img {
+    width: 80%;
+    height: auto;
+}
+
+.blank-featured-img {
+    width: 100%;
+    background-color: var(--skewed-color);
+    height: 70%;
+}
+
+
 
 /* Posts */
 
@@ -264,7 +343,8 @@ label {
     font-size: var(--font-size-lg)
 }
 
-.post-content:hover {
+.post-content:hover,
+.real-container:hover {
     background-color: var(--fun-color);
 }
 
@@ -272,7 +352,7 @@ label {
     background-color: var(--light-contrast-color);
     width: 80%;
     height: 1px;
-    margin: auto;
+    margin: 1rem auto;
 }
 
 .no-results {
@@ -401,12 +481,6 @@ label {
         grid-template-columns: 90% 1fr;
     }
 
-    .featured-posts {
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-    }
-
     .post-content {
         width: 300px;
         font-size: var(--font-size-s-sm)
@@ -442,5 +516,27 @@ label {
 
     .search-results {
         font-size: var(--font-size-sm)
+    }
+
+    .first-featured-captions {
+        font-size: var(--font-size-sm);
+    }
+
+    .small-featured-container {
+        font-size: var(--font-size-s-sm);
+    }
+
+    .new-posts-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap);
+    }
+
+    .small-featured-container {
+        width: 80%;
+        padding: 1rem 1rem;
+        border-radius: 10px;
     }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/CSS/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/CSS/main.css"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Content Nausea</title>
 </head>
@@ -25,40 +25,60 @@
                     <i class="ri-close-line close-icon"></i>
                 </button>
                 <div class="logo" id="logo">
-                    <a class="logo-link" href="./index.html">
-                        <img class="logo-pic" src="assets/imgs/content-nausea.png" alt="Content Nausea Logo">
+                    <a class="logo-link" href="/index.html">
+                        <img class="logo-pic" src="/assets/imgs/content-nausea.png" alt="Content Nausea Logo">
                     </a>
                 </div>
             </div>
             <div class="menu-bar">
                 <ul class="menu-list">
                     <li>
-                        <a href="post-view.html" class="list-link" id="new-posts">New Posts</a>
+                        <a href="/post-view.html" class="list-link" id="new-posts">New Posts</a>
                     </li>
                     <li>
-                        <a href="post-view.html" class="list-link" id="articles">Articles</a>
+                        <a href="/post-view.html" class="list-link" id="articles">Articles</a>
                     </li>
                     <li>
-                        <a href="post-view.html" class="list-link" id="reviews">Reviews</a>
+                        <a href="/post-view.html" class="list-link" id="reviews">Reviews</a>
                     </li>
                     <li>
-                        <a href="post-view.html" class="list-link" id="film">Film</a>
+                        <a href="/post-view.html" class="list-link" id="film">Film</a>
                     </li>
                     <li>
-                        <a href="post-view.html" class="list-link" id="music">Music</a>
+                        <a href="/post-view.html" class="list-link" id="music">Music</a>
                     </li>
                     <li>
-                        <a href="post-view.html" class="list-link" id="others">Others</a>
+                        <a href="/post-view.html" class="list-link" id="others">Others</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="search-title section-header-offset">
-        <h2 class="search-results" id="search-text">Showing results for: "</h2>
-    </div>
-    <section class="multi-posts featured-posts section-header-offset">
-        <div class="multi-post-container featured-posts-container" id="post-container">
+
+    <section class="featured-section section-header-offset">
+        <div class="featured-container">
+            <div id="first-featured-section">
+            </div>
+            <div class="small-posts section-header-offset">
+                <div class="divider-line"></div>
+                <h2>New Posts</h2>
+                <div class="new-posts-container" id="new-posts-container">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-me-section section-header-offset">
+        <div class="divider-line"></div>
+        <div class="about-me-container">
+            <div class="author-pic-holder">
+                <img class="author-pic" src="/assets/imgs/me.jpeg" alt="Picture of me">
+            </div>
+            <div class="about-me-content">
+                <h3>About the Author</h3>
+                <p>
+                    Fill in this later with about me section.
+                </p>
+            </div>
         </div>
     </section>
     <div class="section-footer-offset"></div>
@@ -79,7 +99,7 @@
                 </li>
                 <li>
                     <a href="https://letterboxd.com/" target="_blank">
-                        <img class="letterboxd-icon" src="assets/imgs/letterboxd-decal.png" alt="Letterboxd Logo">
+                        <img class="letterboxd-icon" src="/assets/imgs/letterboxd-decal.png" alt="Letterboxd Logo">
                     </a>
                 </li>
                 <li>
@@ -92,6 +112,6 @@
     </div>
 </footer>
 </body>
-<script src="./assets/JS/main.js"></script>
-<script src="./assets/JS/search.js"></script>
+<script src="/assets/JS/main.js"></script>
+<script src="/assets/JS/featured.js"></script>
 </html>

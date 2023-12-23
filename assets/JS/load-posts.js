@@ -20,7 +20,7 @@ function getCookie(name) {
 
 
 
-fetch('./assets/post-headers.json')
+fetch('/assets/post-headers.json')
     .then((response) => response.json())
     .then((json) => json.sort(function (a, b) {
         let date_a = Date.parse(a['publish-date'])
@@ -35,7 +35,7 @@ fetch('./assets/post-headers.json')
     .then((sorted) => makeHTMLFromJson(sorted));
 
 const makeHTMLFromJson = (json) =>  {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < json.length; i++) {
         if (i < json.length) {
             if (filterSatisfied(json[i])) {
                 makePost(json[i])

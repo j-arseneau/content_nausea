@@ -5,12 +5,13 @@ const query = urlParams.get('query');
 const searchTitle = document.querySelector('#search-text')
 searchTitle.textContent += query + "\""
 
-fetch('./assets/post-headers.json')
+fetch('/assets/post-headers.json')
     .then((response) => response.json())
     .then((json) => runSearch(query, json));
 
 function runSearch (q, json) {
     let numPosts = 0;
+    let seen = [];
     let qList = q.trim().split(' ')
     for (let i = 0; i < qList.length; i++) {
         for (let j = 0; j < json.length; j++) {
@@ -18,8 +19,11 @@ function runSearch (q, json) {
                 return value.toLowerCase().split(' ').some((s) => {
                     return s.includes(qList[i].toLowerCase())
             })})) {
-                makePost(json[j])
-                numPosts += 1;
+                if (!seen.includes(j)) {
+                    makePost(json[j])
+                    numPosts += 1;
+                    seen.push(j)
+                }
             }
         }
     }
