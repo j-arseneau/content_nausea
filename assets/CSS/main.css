@@ -61,10 +61,6 @@ label {
     display: none;
 }
 
-p {
-    margin: 1rem 0;
-}
-
 .top-bar {
     position: relative;
     height: 90px;
@@ -432,12 +428,20 @@ p {
     font-size: var(--font-size-lg);
     display: flex;
     flex-direction: column;
-    gap: var(--gap)
+    gap: var(--gap);
 }
 
-.in-text-image {
+.in-text-image-middle {
     width: 60%;
     margin: auto;
+}
+
+.in-text-image-left {
+    width: 60%;
+}
+
+.text-divider {
+    margin: 1.2rem 0;
 }
 
 /* Footer */
