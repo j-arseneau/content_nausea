@@ -8,5 +8,15 @@
     "post-tag": "Music",
     "img-ref": "/assets/imgs/posts/great-albums-2023/thumbnail.png",
     "img-alt": "Best of 2023 filled with album cover collage"
+  },
+  {
+    "post-ref": "/posts/masculine-apocalypse",
+    "publish-date": "2024-10-03",
+    "post-title": "A Masculine Apocalypse",
+    "post-subtitle": "Assessing gender and sexuality in the Mad Max franchise.",
+    "post-type": "Article",
+    "post-tag": "Film",
+    "img-ref": "/assets/imgs/posts/masculine-apocalypse/thumbnail.png",
+    "img-alt": "Max Rockatansky staring at the wasteland"
   }
 ]
